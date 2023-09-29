@@ -1,0 +1,38 @@
+﻿<Window x:Class="CaptureMouseError.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaptureMouseError"
+        xmlns:avalon="https://github.com/Dirkster99/AvalonDock"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Grid>
+        <avalon:DockingManager>
+            <avalon:DockingManager.Theme>
+                <avalon:ExpressionDarkTheme/>
+            </avalon:DockingManager.Theme>
+            <avalon:LayoutRoot>
+                <avalon:LayoutPanel>
+                    <avalon:LayoutAnchorablePane>
+                        <avalon:LayoutAnchorable Title="Dag from here">
+                            <StackPanel Margin="16">
+                                <TextBlock Text="Demonstration of Issue"
+                                           FontSize="24"
+                                           HorizontalAlignment="Center"
+                                           Margin="8"/>
+                                <TextBlock TextWrapping="Wrap">
+                                    Drag this anchorable from the main window to create a 
+                                    floating window. Then try to drag the floating panel
+                                    by using the tab (not the title bar). The application
+                                    will then stop responding to mouse clicks until you
+                                    click away from the application altogether.
+                                </TextBlock>
+                            </StackPanel>
+                        </avalon:LayoutAnchorable>
+                    </avalon:LayoutAnchorablePane>
+                </avalon:LayoutPanel>
+            </avalon:LayoutRoot>
+        </avalon:DockingManager>
+    </Grid>
+</Window>
