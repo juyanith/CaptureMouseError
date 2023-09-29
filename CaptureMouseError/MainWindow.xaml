@@ -15,7 +15,7 @@
             <avalon:LayoutRoot>
                 <avalon:LayoutPanel>
                     <avalon:LayoutAnchorablePane>
-                        <avalon:LayoutAnchorable Title="Dag from here">
+                        <avalon:LayoutAnchorable Title="Drag from here">
                             <StackPanel Margin="16">
                                 <TextBlock Text="Demonstration of Issue #458"
                                            FontSize="24"
